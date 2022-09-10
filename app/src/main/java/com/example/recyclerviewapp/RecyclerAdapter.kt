@@ -10,8 +10,11 @@ import androidx.recyclerview.widget.RecyclerView
 
 class RecyclerAdapter:RecyclerView.Adapter<RecyclerAdapter.ViewHolder>()
 {
-    private var texts= arrayOf("text1","text2","text3" ,"text4","text6,text7")
-    private var images= arrayOf(R.drawable.ic_launcher_foreground,R.drawable.ic_launcher_foreground,R.drawable.ic_launcher_foreground,R.drawable.ic_launcher_foreground,R.drawable.ic_launcher_foreground,R.drawable.ic_launcher_foreground,R.drawable.ic_launcher_foreground)
+    private var texts= arrayOf("text1","text2","text3" ,"text4","text6","text7","text9","text10")
+    private var images= arrayOf(R.drawable.ic_launcher_foreground,R.drawable.ic_launcher_foreground,R.drawable.ic_launcher_foreground,R.drawable.ic_launcher_foreground,
+        com.google.android.material.R.drawable.abc_ab_share_pack_mtrl_alpha,
+        com.google.android.material.R.drawable.abc_action_bar_item_background_material,
+        androidx.constraintlayout.widget.R.drawable.abc_action_bar_item_background_material,R.drawable.ic_launcher_foreground,R.drawable.ic_launcher_foreground,R.drawable.ic_launcher_foreground,R.drawable.ic_launcher_foreground)
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerAdapter.ViewHolder {
        val v=LayoutInflater.from(parent.context).inflate(R.layout.card_layout,parent,false)
      return ViewHolder(v)
